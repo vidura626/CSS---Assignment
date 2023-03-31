@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 24vw);
+  grid-template-rows: repeat(3, 24vh);
+  grid-template-areas:
+    "red red green oranged"
+    "purple pink blue oranged"
+    "hardRed hardBlue hardBlue oranged";
+}
+
+div {
+  background-color: aqua;
+  border: 0.5px solid black;
+}
+body main div:nth-child(1) {
+  background-color: red;
+  grid-area: red;
+}
+
+body main div:nth-child(2) {
+  background-color: green;
+  grid-area: green;
+}
+body main div:nth-child(3) {
+  background-color: rgb(245, 103, 51);
+  grid-area: oranged;
+}
+body main div:nth-child(4) {
+  background-color: purple;
+  grid-area: purple;
+}
+body main div:nth-child(5) {
+  background-color: rgb(220, 97, 158);
+  grid-area: pink;
+}
+body main div:nth-child(6) {
+  background-color: blue;
+  grid-area: blue;
+}
+body main div:nth-child(7) {
+  background-color: brown;
+  grid-area: hardRed;
+}
+body main div:nth-child(8) {
+  background-color: rgb(1, 1, 106);
+  grid-area: hardBlue;
+}

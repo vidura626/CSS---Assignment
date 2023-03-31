@@ -1,0 +1,65 @@
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Fixed */
+div {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+main div {
+  position: fixed;
+}
+
+main div:first-child {
+  border: 1rem solid red;
+  z-index: 10;
+}
+
+main div:last-child {
+  border: 2rem solid grey;
+  z-index: 9;
+}
+
+/* Text */
+
+body article section:first-child div {
+  background-color: purple;
+  position: absolute;
+}
+
+body article section:nth-child(2) div {
+  background-color: dodgerblue;
+  position: absolute;
+}
+
+body article section:nth-child(3) div {
+  background-color: rgb(236, 102, 54);
+  position: absolute;
+}
+
+p {
+  margin: 0;
+  height: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+}

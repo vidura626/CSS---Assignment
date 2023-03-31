@@ -1,0 +1,145 @@
+:root {
+  --color-primary: red;
+  --color-secondary: white;
+  --color-green: green;
+  --color-yellow: rgb(186, 186, 45);
+  --color-pink: hotpink;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  background-color: grey;
+}
+
+body section {
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+}
+
+body section:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary);
+}
+
+body section:nth-child(2) {
+  top: 0;
+  right: 0;
+  background-color: var(--color-green);
+}
+
+body section:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-yellow);
+}
+
+body section:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-pink);
+}
+
+body section div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 12vw;
+  height: 12vw;
+  margin: auto;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+}
+
+body section div div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  border-radius: initial;
+  background-color: var(--color-primary);
+}
+
+body div div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 6vw;
+  margin: auto;
+  border-radius: 100%;
+  background-color: var(--color-primary);
+}
+
+body div {
+  position: absolute;
+  margin: auto;
+  background-color: var(--color-secondary);
+  width: 12vw;
+  height: 12vw;
+}
+
+body div:nth-child(5) {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+body div:nth-child(6) {
+  width: 16vw;
+  height: 8vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* border-radius: 0 0 12rem 12rem; */
+  border-radius: 0 0 192px 192px;
+}
+
+body div:nth-child(7) {
+  width: 16vw;
+  height: 8vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 192px 192px 0 0;
+}
+
+body div:nth-child(8) {
+  border-radius: 0 0 100% 0;
+  left: 0;
+  top: 0;
+}
+
+body div:nth-child(9) {
+  border-radius: 0 0 0 100%;
+  right: 0;
+  top: 0;
+}
+
+body div:nth-child(10) {
+  border-radius: 100% 0 0 0;
+  bottom: 0;
+  right: 0;
+}
+
+body div:nth-child(11) {
+  border-radius: 0 100% 0 0;
+  bottom: 0;
+  left: 0;
+}
+
+body {
+  min-width: 500px;
+}
