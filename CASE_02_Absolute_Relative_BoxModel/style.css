@@ -83,6 +83,7 @@ main div video {
 
 /* Footer */
 footer p {
+  margin: 0;
   background-color: grey;
   color: var(--color-text-light);
   font-weight: bold;
@@ -113,4 +114,8 @@ aside {
   position: absolute;
   left: 0;
   height: 100%;
+}
+
+article p:last-child {
+  margin: 0;
 }
