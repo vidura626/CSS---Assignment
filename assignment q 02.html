@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q 02</title>
+    <style>
+      :root {
+        --color-primary: rgb(231, 224, 224);
+        --color-secondary: rgb(122, 21, 122);
+        --color-text-light: rgb(253, 252, 252);
+        --color-text-dark: rgb(17, 15, 15);
+      }
+
+      /* Navbar */
+
+      nav ul {
+        position: relative;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 1rem;
+        padding-left: 0;
+      }
+
+      nav ul li a {
+        color: var(--color-text-dark);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #555;
+      }
+
+      nav ul li:first-child {
+        position: absolute;
+        left: 0;
+      }
+
+      img {
+        width: 20vw;
+      }
+
+      /* Aside */
+      aside {
+        padding: 0 0.5rem;
+        height: inherit;
+        width: 20vw;
+        background-color: purple;
+      }
+
+      aside ul {
+        list-style: none;
+      }
+
+      aside ul li {
+        font-size: 1rem;
+        padding: 1rem 0;
+      }
+
+      aside ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.08rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--color-text-light);
+      }
+
+      aside ul li a:hover {
+        color: rgb(202, 200, 200);
+      }
+
+      /* videos */
+      main div {
+        display: flex;
+        justify-content: center;
+      }
+
+      main div video {
+        width: 33%;
+        margin: 0.1rem;
+      }
+
+      /* Footer */
+      footer p {
+        background-color: grey;
+        color: var(--color-text-light);
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        width: 100%;
+      }
+
+      /* Layouts */
+      body {
+        padding: 1rem;
+      }
+
+      main {
+        position: relative;
+        box-sizing: border-box;
+        width: 95vw;
+        padding: 0 1rem;
+      }
+
+      article {
+        margin-left: 21vw;
+      }
+
+      aside {
+        width: 20vw;
+        position: absolute;
+        left: 0;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><img src="images/ijse.png" alt="" /></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </aside>
+      <article>
+        <div>
+          <video autoplay loop src="videos/fishes.mp4"></video>
+          <video autoplay loop src="videos/fishes.mp4"></video>
+          <video autoplay loop src="videos/fishes.mp4"></video>
+        </div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          ut modi est eligendi consequuntur tempore cumque eveniet totam ipsum
+          ea consectetur ex sunt, nostrum vero omnis neque praesentium
+          repellendus odio cum suscipit minima velit autem. Sapiente eos
+          necessitatibus aperiam? Non cupiditate aliquam doloribus rerum
+          delectus soluta recusandae, consequatur quo odio eos ratione ea, in
+          accusantium beatae maxime expedita porro sapiente sequi! Tempore illo
+          cum aperiam. Iure expedita odit enim debitis at illum placeat? Sed,
+          magnam minima modi laborum quaerat earum dolores doloribus quisquam
+          reprehenderit deserunt.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          ut modi est eligendi consequuntur tempore cumque eveniet totam ipsum
+          ea consectetur ex sunt, nostrum vero omnis neque praesentium
+          repellendus odio cum suscipit minima velit autem. Sapiente eos
+          necessitatibus aperiam? Non cupiditate aliquam doloribus rerum
+          delectus soluta recusandae, consequatur quo odio eos ratione ea, in
+          accusantium beatae maxime expedita porro sapiente sequi! Tempore illo
+          cum aperiam. Iure expedita odit enim debitis at illum placeat? Sed,
+          magnam minima modi laborum quaerat earum dolores doloribus quisquam
+          reprehenderit deserunt.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Developped By IJSE</p>
+    </footer>
+  </body>
+</html>
