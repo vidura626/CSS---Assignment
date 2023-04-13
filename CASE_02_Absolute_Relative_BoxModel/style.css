@@ -1,23 +1,43 @@
+*,
+*::before,
+*::after,
 :root {
   --color-primary: rgb(231, 224, 224);
   --color-secondary: rgb(122, 21, 122);
   --color-text-light: rgb(253, 252, 252);
   --color-text-dark: rgb(17, 15, 15);
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 1rem;
+  border: 2px solid grey;
+  border-radius: 8px;
+}
+
+/* hr */
+hr {
+  margin: 0;
+  border-width: 2px;
+  border-color: black;
 }
 
 /* Navbar */
 
 nav ul {
+  padding-left: 0;
   position: relative;
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  margin: 0;
+  align-items: first baseline;
+  margin: 0.5rem;
+  height: 60px;
 }
 
 nav ul li {
-  margin: 1rem;
+  margin: 0 1rem 0 0;
   padding-left: 0;
 }
 
@@ -38,7 +58,60 @@ nav ul li:first-child {
 }
 
 img {
-  width: 20vw;
+  margin-left: 2rem;
+  width: 210px;
+  height: 65px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 !important;
+  }
+  /* NavBar */
+
+  nav ul {
+    height: fit-content;
+    justify-content: center;
+    padding-top: 4.5rem;
+    font-size: 0.8rem;
+  }
+
+  nav ul li {
+    margin: 0 1.5rem 0 0;
+    padding: 0;
+  }
+
+  nav ul li:first-child {
+    top: 0;
+    left: calc(50vw - 140px);
+  }
+
+  img {
+    margin: 0;
+    width: 230px;
+    height: 70px;
+  }
+
+  /* Aside hide */
+  aside {
+    visibility: hidden;
+  }
+
+  /* Videos */
+  main div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main div video {
+    object-fit: cover;
+    margin: 0.1rem;
+    width: 100%;
+  }
+
+  main article {
+    margin-left: 0;
+  }
 }
 
 /* Aside */
@@ -51,6 +124,7 @@ aside {
 
 aside ul {
   list-style: none;
+  padding-left: 10px;
 }
 
 aside ul li {
@@ -81,9 +155,17 @@ main div video {
   margin: 0.1rem;
 }
 
+main article div video {
+  border: 3px solid green;
+  padding: 0.1rem;
+  border-radius: 5px;
+}
+
 /* Footer */
+footer {
+  width: 100%;
+}
 footer p {
-  margin: 0;
   background-color: grey;
   color: var(--color-text-light);
   font-weight: bold;
@@ -91,22 +173,20 @@ footer p {
   padding: 1rem;
   font-size: 1.5rem;
   width: 100%;
+  margin: 0;
 }
 
 /* Layouts */
-body {
-  padding: 1rem;
-}
 
 main {
   position: relative;
   box-sizing: border-box;
-  width: 95vw;
+  width: 100%;
   padding: 0 1rem;
 }
 
 article {
-  margin-left: 21vw;
+  margin-left: 19.5vw;
 }
 
 aside {
@@ -116,6 +196,7 @@ aside {
   height: 100%;
 }
 
-article p:last-child {
-  margin: 0;
+main article p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }

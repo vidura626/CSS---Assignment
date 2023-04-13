@@ -7,8 +7,8 @@ Case 01:
 Case 02:
 ![image](https://user-images.githubusercontent.com/95334829/229194268-4363b63b-48be-42c7-b6ef-7beb6ff05880.png)
 ![image](https://user-images.githubusercontent.com/95334829/229194345-d522a1f6-0356-43cb-b848-13e237cb9be4.png)
+![image](https://user-images.githubusercontent.com/95334829/231739368-dfa1857c-f84c-4c1f-8f2f-029be549eeaa.png)
 
- 
 Case 03:
 ![image](https://user-images.githubusercontent.com/95334829/229193096-8cac5235-09ff-4150-9004-5a038f92304d.png)
 ![image](https://user-images.githubusercontent.com/95334829/229193252-a8e000c9-816a-4244-bf2c-bac0a51a87ef.png)
